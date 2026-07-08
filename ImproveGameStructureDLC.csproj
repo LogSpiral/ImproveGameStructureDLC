@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<LangVersion>preview</LangVersion>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="FuzzySearch.Net" Version="1.1.0" />
+		<!-- 夜幽模组构建工具 -->
+		<PackageReference Include="Solaestas.tModLoader.ModBuilder" Version="1.6.1" />
+		<!-- ImproveGame -->
+		<ProjectReference Include="..\ImproveGame\ImproveGame.csproj" />
+		<!-- SilkyUI -->
+		<ProjectReference Include="..\SilkyUIFramework\SilkyUIFramework.csproj" />
+		<!-- SilkyUI 分析器 -->
+		<ProjectReference Include="..\SilkyUIAnalyzer\SilkyUIAnalyzer.csproj">
+			<OutputItemType>Analyzer</OutputItemType>
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="lib\*.dll" />
+		<ModReference Include="lib\*.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="**/*.xml" Exclude="bin/**/*;obj/**/*" Pack="true" ModPath="%(Identity)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="UI\" />
+	</ItemGroup>
+</Project>

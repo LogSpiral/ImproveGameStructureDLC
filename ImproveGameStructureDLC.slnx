@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../ImproveGame/ImproveGame.csproj" />
+  <Project Path="../SilkyUIAnalyzer/SilkyUIAnalyzer.csproj" />
+  <Project Path="../SilkyUIFramework/SilkyUIFramework.csproj" />
+  <Project Path="ImproveGameStructureDLC.csproj" />
+</Solution>
