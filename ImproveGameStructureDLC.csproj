@@ -20,17 +20,16 @@
 			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 		</ProjectReference>
 	</ItemGroup>
-
 	<ItemGroup>
 		<Reference Include="lib\*.dll" />
 		<ModReference Include="lib\*.dll" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<AdditionalFiles Include="**/*.xml" Exclude="bin/**/*;obj/**/*" Pack="true" ModPath="%(Identity)" />
+		<AdditionalFiles Include="**/*.xml;**/*.json;**/*.qotstruct" Exclude="bin/**/*;obj/**/*" Pack="true" ModPath="%(Identity)" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="UI\" />
+		<Publicize Include="ImproveGame" />
 	</ItemGroup>
 </Project>

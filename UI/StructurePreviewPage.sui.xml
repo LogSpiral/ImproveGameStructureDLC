@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Body Class="ImproveGameStructureDLC.UI.StructurePreviewPage"
+      Width="100%" Height="100%" Padding="4 0"
+	  BorderRadius="8"
+	  MainAlignment="SpaceEvenly" CrossAlignment="Center">
+	<ElementGroup Name="InfoPanel" Width="30%" Margin="0 0 4 0" Height="100%"
+				  FlexDirection="Column" >
+		<TextView Name="NameText" FitWidth="false" Width="100%" TextAlign="0.1 0.5" Margin="0 0 0 4" BackgroundColor="#0000003F" BorderRadius="8"/>
+		<HR BackgroundColor="rgba(0,0,0,0.75)"/>
+		<TextView Name="AuthorText" FitWidth="false" Width="100%" Margin="0 4" TextAlign="0.1 0.5" BackgroundColor="#0000003F" BorderRadius="8"/>
+		<HR BackgroundColor="rgba(0,0,0,0.75)"/>
+		<TextView Name="DateText" FitWidth="false" Width="100%" Margin="0 4" TextAlign="0.1 0.5" BackgroundColor="#0000003F" BorderRadius="8"/>
+		<HR BackgroundColor="rgba(0,0,0,0.75)"/>
+		<TextView Name="TagText" FitWidth="false" Width="100%" Margin="0 4" TextAlign="0.1 0.5" BackgroundColor="#0000003F" BorderRadius="8"/>
+		<HR BackgroundColor="rgba(0,0,0,0.75)"/>
+		<TextView Name="DescriptionText" WordWrap="true" FitWidth="false" Width="100%" FlexGrow="1" Margin="0 4 0 0" BackgroundColor="#0000003F" BorderRadius="8"/>
+		<HR BackgroundColor="rgba(0,0,0,0.75)"/>
+		<TextView Name="ImportingButton" FitWidth="false" Width="100%" Margin="0 4" TextAlign="0.5" BackgroundColor="#00FF003F" BorderRadius="8"/>
+	</ElementGroup>
+	<VR BackgroundColor="rgba(0,0,0,0.75)" Margin="4 0"/>
+	<View Name="PreviewPanel" Width="70%" Margin="4 0 0 0" Height="100%" BackgroundColor="#0000003F" BorderRadius="8"/>
+</Body>

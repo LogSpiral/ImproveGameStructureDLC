@@ -1,0 +1,27 @@
+Keybinds.StructureDLCToggleKeyBind.DisplayName: 打开建造/构造魔杖拓展管理器
+
+StructureDLCController: {
+	Title: 建造/构造魔杖拓展管理器
+	Preview: 预览
+	Import: 导入
+	Help: 帮助
+	HelpContent:
+		'''
+		按下"预览"按钮查看建筑结构预览
+		按下"导入"按钮后将相应结构复制到相应法杖的列表中
+		如果不小心导入了不想要的结构或者单纯想删除就自己到文件夹里删除
+		*.png 是建造魔杖的文件，在 ImproveGame/CreateWand 文件夹中
+		*.qotstructure 是构造魔杖的文件，在 ImproveGame 文件夹中
+		'''
+	Name: 建筑名
+	AuthorOrUploader: 作者/上传者
+	Description: 描述
+	Date: 日期
+	Tag: 标签
+
+	FilterMethod: {
+		ByAuthor: 通过作者筛选
+		ByTag: 通过标签筛选
+		ByName: 通过建筑名筛选
+	}
+}

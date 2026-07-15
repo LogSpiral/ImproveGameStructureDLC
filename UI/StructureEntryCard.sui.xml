@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Body Class="ImproveGameStructureDLC.UI.StructureEntryCard"
+      Width="100%" FitHeight="true" Padding="4" Margin="1" BorderRadius="8" BackgroundColor="#0000003F" 
+	  MainAlignment="SpaceEvenly" CrossAlignment="Center">
+	<TextView Name="InnerText" TextAlign="0 0.5" Height="100%" Width="100%" FlexGrow="1"/>
+	<ElementGroup FitWidth="true" FitHeight="true">
+		<Image Name="PreviewButton" Width="24px" Height="24px" Margin="4 0 4 0" BorderRadius="4" Border="1" BorderColor="#000000FF" BackgroundColor="#7F7F7F3F" ImageAlign="0.5"/>
+		<Image Name="ImportingButton" Width="24px" Height="24px" Margin="4 0 4 0" BorderRadius="4" Border="1" BorderColor="#000000FF" BackgroundColor="#7F7F7F3F" ImageAlign="0.5"/>
+	</ElementGroup>
+
+</Body>

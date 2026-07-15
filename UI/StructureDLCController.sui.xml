@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Class 填写对应类名 -->
+<Body Class="ImproveGameStructureDLC.UI.StructureDLCController"
+      Enabled="false" EnableBlur="true"
+      Border="0" BorderColor="#00000000" BackgroundColor="#00000000"
+      Gap="0" FitWidth="true" FitHeight="true" Left="50#" Top="50#">
+	<ElementGroup Name="MainContainer" Border="2" BorderRadius="8"
+                  FitWidth="true" FitHeight="true" Height="300px"
+                  FlexDirection="Column" CrossAlignment="Stretch">
+		<DraggableView Name="Header" FitWidth="true" Height="36px"
+                       Padding="8 0 0 0" FlexDirection="Row" MainAlignment="Start" CrossAlignment="Center">
+			<!-- Title -->
+			<TextView Name="Title" TextScale="0.4" FlexGrow="1" DisableMouseInteraction="true"/>
+			<Image Name="BackButton" Width="44px" Height="36px" ImageAlign="0.5" ImageColor="rgba(255,255,255,0.5)" Invalid="true"/>
+			<Image Name="OpenFolderButton" Width="44px" Height="36px" ImageAlign= "0.5" ImageColor="rgba(255,255,255,0.5)" Bind.Command="OpenFolderCommand"/>
+			<Cross Name="CloseButton" Width="36px" Height="36px" CrossBorder="1" CrossBorderRadius="2" BorderRadius="0 8 0 0"/>
+		</DraggableView>
+		<HR BackgroundColor="rgba(0,0,0,0.75)"/>
+		<ElementGroup Name="PageContainer" Width="400px" Height="220px" Padding="4">
+			<ElementGroup Name="MenuPage" Width="100%" Height="100%" MainAlignment="SpaceEvenly" CrossAlignment="Center">
+				<Image Name="CreateWandButton" Width="45%" ImageAlign="0.5 0.5" Height="90%" BorderColor="#000000FF" Border="1" BorderRadius="8" BackgroundColor="#0000003F"/>
+				<Image Name="ConstructWandButton" Width="45%" ImageAlign="0.5 0.5" Height="90%" BorderColor="#000000FF" Border="1" BorderRadius="8" BackgroundColor="#0000003F"/>
+			</ElementGroup>
+			<DataSourceScrollView Name="CreateWandList" Width="100%" FlexGrow="1" FlexShrink="1" Bind.ItemSource="CreateInfoList"  Height="100%" Invalid="true">
+				<M.Mask Width="100%" Height="100%" />
+				<M.Container Width="100%" FitHeight="true" FlexDirection="Row" MainAlignment="Start"/>
+			</DataSourceScrollView>
+			<DataSourceScrollView Name="ConstructWandList" Width="100%" FlexGrow="1" FlexShrink="1" Bind.ItemSource="ConstructInfoList"  Height="100%" Invalid="true">
+				<M.Mask Width="100%" Height="100%" />
+				<M.Container Width="100%" FitHeight="true" FlexDirection="Row" MainAlignment="Start"/>
+			</DataSourceScrollView>
+			<ElementGroup Name="CreateWandPreviewContainer" Width="100%" Height="100%" Invalid="true"/>
+			<ElementGroup Name="ConstructWandPreviewContainer" Width="100%" Height="100%" Invalid="true"/>
+		</ElementGroup>
+	</ElementGroup>
+</Body>

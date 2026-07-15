@@ -1,1 +1,27 @@
+Keybinds.StructureDLCToggleKeyBind.DisplayName: Open Create/Construct Wand DLC Manager
 
+StructureDLCController: {
+	Title: Create/Construct Wand DLC Manager
+	Preview: Preview
+	Import: Import
+	Help: Help
+	HelpContent:
+		'''
+		Press "Preview" button to check the preview.
+		Press "Import" button to copy the building to wand
+		Delete the building file in the Directory by yourself
+		*.png for Create Wand in ImproveGame/CreateWand Folder
+		*.qotstructure for Construct Wand in ImproveGame Folder
+		'''
+	Name: Building Name
+	AuthorOrUploader: Author/Uploader
+	Description: Description
+	Date: Date
+	Tag: Tag
+
+	FilterMethod: {
+		ByAuthor: By Author
+		ByTag: By Tag
+		ByName: By Name
+	}
+}
